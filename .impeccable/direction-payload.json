@@ -1,0 +1,131 @@
+{
+  "title": "Choose the visual world for at-here",
+  "question": "The roll assigned the Operator's Exchange. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Operator's Exchange",
+      "kicker": "THE ROLL",
+      "lineage": "manual telephone exchange jack fields, 1920s to 1950s",
+      "thesis": "Every app is a jack on one panel; the card connects you instead of listing you.",
+      "palette": ["#DED7C6", "#1A1917", "#B08D3E", "#2F7D4F", "#7A2E2B"],
+      "materials": ["enamelled steel panel", "engraved traffolyte labels", "brass jack rings", "braided cotton cord"],
+      "viewport": "One full-width light enamel panel. The top designation strip carries the handle at engraved title scale with the avatar set in the line-lamp bezel. Below it the jack field: one row per app, each a full-width coloured designation strip with the app name engraved, its record collections on a leader line, a brass jack as the row's only action, and a lit lamp for presence. Two toggle switches at the panel foot: vCard and JSON.",
+      "risk": "Reads as a toy if the jack rows are not ruled strictly enough to scan like a table, and slides into the black-panel-with-glowing-lamps cluster if the enamel goes dark. The panel stays light.",
+      "raised": [
+        { "from": "Split-flap concourse", "raise": "Rows live in fixed columns (strip, evidence, jack, lamp) that never move; a state change restyles the row without breaking the ruling." },
+        { "from": "Variable type specimen", "raise": "Hierarchy by scale contrast alone: the handle is enormous, everything else is engraved small in one face." },
+        { "from": "Studio Dumbar identity", "raise": "Colour commits at region scale: each app's designation strip is a full-width saturated band, never a dot beside grey text." },
+        { "from": "Miura-fold sheet", "raise": "One orchestrated deploy on load: lamps come up in sequence as the panel resolves, and reduced-motion snaps to the lit state." },
+        { "from": "Tensegrity column", "raise": "Every label carries its evidence: each jack's leader line names the record collections that justify the lamp, so presence is shown, not asserted." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Finger Printout",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Unix finger(1) and .plan files, 1977 onward",
+      "thesis": "The oldest 'where is this person' protocol, reprinted on continuous-feed paper.",
+      "palette": ["#F2EEDF", "#2B2A28", "#B5342A", "#8C8677"],
+      "materials": ["tractor-feed paper", "dot-matrix ribbon ink", "perforated edge strips"],
+      "viewport": "A wide sheet with perforated tractor edges. The header block in fixed-width type: Login, Name, Directory (the PDS), Since. Then Plan: one line per app with its URL in ribbon ink, red overstrike for the primary link. The vCard is a tear-off strip at the sheet's foot.",
+      "risk": "Also where most developer-facing tools land; a monospace page is the category-plus-avoidance guess for this audience, and it sits one step from the terminal-dump cliché."
+    },
+    {
+      "id": "challenger-split-flap",
+      "label": "Split-flap Concourse",
+      "verdict": "competitive",
+      "lineage": "rail concourse departure boards",
+      "thesis": "The account as a departures board: apps are destinations, rows are ranked, flaps cascade as data lands.",
+      "palette": ["#111111", "#F4F4F2", "#8E8F92", "#E0A020", "#B3261E"],
+      "materials": ["painted flap faces", "brushed steel frame", "amber row lamps"],
+      "viewport": "A dark board headed by the handle in fixed flap cells. One row per app: destination (app name), via (profile URL), status (present). Unknown apps sit as unlisted destinations in the last rows.",
+      "case": "Fuses cleanly: apps map to destinations and the board is already a strict scanable table. Holds product clarity, loses audience identification to the telephony world, and lands in the dark-surface cluster.",
+      "risk": "Reads as retro novelty the moment the grid loosens.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse.webp"
+    },
+    {
+      "id": "challenger-consumer-app",
+      "label": "Warm Consumer App",
+      "verdict": "competitive",
+      "lineage": "soft-cornered consumer app surfaces",
+      "thesis": "Cards on a warm ground with one saturated colour that only appears where you can press.",
+      "palette": ["#F6F1EA", "#FFFFFF", "#1F1F1F", "#E4572E"],
+      "materials": ["soft-cornered white cards", "one action colour", "rounded humanist sans"],
+      "viewport": "Avatar and name in a header card, then one card per app with the app name, a plain-language line, and a single coloured Open button.",
+      "case": "Fuses trivially and reads instantly. Holds clarity, loses identification because it is the category's default face and indistinguishable from the link-in-bio pages it would sit beside.",
+      "risk": "Nobody remembers it an hour later.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-warm-consumer-app-surface-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/digital-design-canon-warm-consumer-app-surface.webp"
+    },
+    {
+      "id": "challenger-type-specimen",
+      "label": "Variable Type Specimen",
+      "verdict": "declined",
+      "lineage": "interactive variable-font specimens",
+      "thesis": "The handle as a giant glyph, apps as a specimen grid.",
+      "palette": ["#FAFAF7", "#111111", "#2A5BD7"],
+      "materials": ["paper white", "ink black", "one foundry accent"],
+      "viewport": "One enormous handle, a grid of glyph-sized app cells, a mono readout.",
+      "case": "Fuses poorly: the audience does not identify with type foundries and an axis slider has no honest product meaning.",
+      "kept": "Hierarchy by scale contrast alone.",
+      "risk": "Beautiful and unclear.",
+      "hero": "https://impeccable.style/worlds/cards/variable-font-specimen-hero.webp"
+    },
+    {
+      "id": "challenger-dumbar",
+      "label": "Modular Identity Blocks",
+      "verdict": "declined",
+      "lineage": "Studio Dumbar identity systems",
+      "thesis": "Saturated bars and scattered vector marks over the avatar photo.",
+      "palette": ["#00AEEF", "#EC008C", "#FFF200", "#3DAE2B", "#9A9DA3"],
+      "materials": ["flat vector bars", "photographic depth", "multiply overlaps"],
+      "viewport": "Avatar photo tilted under a stack of coloured bars, one per app.",
+      "case": "Fuses loosely: the scatter grammar fights an Operate task and the audience does not identify with agency identity work.",
+      "kept": "Colour owns whole regions, never accents.",
+      "risk": "Expression obscures the task.",
+      "hero": "https://impeccable.style/worlds/cards/studio-dumbar-identity-hero.webp"
+    },
+    {
+      "id": "challenger-miura",
+      "label": "Miura-fold Sheet",
+      "verdict": "declined",
+      "lineage": "deployable origami sheets",
+      "thesis": "The card unfolds from a packet into a tessellated field of apps.",
+      "palette": ["#FFFFFF", "#C9A24A", "#8A8A86", "#9FB8D6"],
+      "materials": ["matte white sheet", "gold foil packet", "scored creases"],
+      "viewport": "A small gold packet that deploys into a parallelogram grid.",
+      "case": "Fuses poorly: a parallelogram grid defeats scanning and the audience has no attachment to aerospace origami.",
+      "kept": "One orchestrated deploy on load.",
+      "risk": "A demo, not a tool.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-miura-orbit-sheet-hero.webp"
+    },
+    {
+      "id": "challenger-tensegrity",
+      "label": "Tensegrity Column",
+      "verdict": "declined",
+      "lineage": "kinetic tensegrity sculpture",
+      "thesis": "The DID at the core, apps as floating rods held in tension.",
+      "palette": ["#D9D9D4", "#151515", "#C8331F", "#9E9E99"],
+      "materials": ["carbon rods", "red cord", "concrete ground"],
+      "viewport": "A network diagram of rods and cords with force labels on leader lines.",
+      "case": "Fuses poorly: the structure has no honest mapping to apps and the audience does not read force diagrams.",
+      "kept": "Every label carries its evidence on a leader line.",
+      "risk": "Sculpture, not a card.",
+      "hero": "https://impeccable.style/worlds/cards/kinetic-sculpture-automata-tensegrity-breathing-column-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The link-in-bio page",
+    "thesis": "What this category ships, executed impeccably.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB"],
+    "materials": ["centred column", "pill buttons", "system sans"],
+    "viewport": "Avatar, name, bio, then stacked full-width buttons, one per app.",
+    "risk": "Indistinguishable from Linktree by design."
+  },
+  "steer": true
+}

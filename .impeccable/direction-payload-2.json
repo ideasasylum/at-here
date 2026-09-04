@@ -1,0 +1,103 @@
+{
+  "title": "Choose the visual world for at-here",
+  "question": "Bolder hand. The deal leads with Darkroom Print. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Darkroom Print",
+      "kicker": "THE ROLL",
+      "lineage": "photographic printing darkrooms under amber safelight",
+      "thesis": "The card is a print pulled from the network's negative: it develops in front of you, station by station.",
+      "palette": ["#E0912A", "#B86E15", "#2A2723", "#8A8378", "#F1EDE4"],
+      "materials": ["amber safelight wash", "wet fibre-based print", "enamel developing tray", "grease pencil", "test strips"],
+      "viewport": "An amber-washed field with an enamel-white tray edge. The print sits in the tray: avatar and handle emerge from grey ghost to full black over the first second as the resolution stations complete (resolve, DID document, repository, profiles), printed timer digits counting alongside. Below the print, test strips: one banded strip per app, its exposure stepped by how many record collections it holds, the app name in grease pencil on the strip, its profile link the strip's only action. vCard and JSON are two labelled bottles on the shelf at the foot.",
+      "risk": "Amber-on-amber is a contrast trap for an Operate surface: body text sits on the enamel and the print, never on the wash. The emergence must resolve within a second and snap under reduced motion or it reads as slow loading.",
+      "raised": [
+        { "from": "Drawcord cape", "raise": "Labels ride the structure: grease-pencil notes sit on the strips and the tray edge, never in boxes." },
+        { "from": "Labanotation score", "raise": "Level by fill, not colour: known, unrecognised and unconfirmed apps are solid, hatched and dotted strip fills, so no state relies on colour alone." }
+      ]
+    },
+    {
+      "id": "challenger-cracktro",
+      "label": "Cracktro Queue",
+      "verdict": "wins",
+      "lineage": "demoscene cracktro title screens",
+      "thesis": "Presence as depth: the handle holds still in front, apps ride baselines behind it, brighter and wider the more of them there is.",
+      "palette": ["#000000", "#F2EBDD", "#B9B2A4", "#6E6960", "#FFB000"],
+      "materials": ["emissive void", "one bitmap face", "drifting dust fields", "amber caret"],
+      "viewport": "Black void. The handle in ivory bitmap type sits dead still at the front with a blinking amber caret. Below it, each app is one baseline of text continuing past both screen edges, its depth set by collection count: busiest brightest and widest, unknown apps deep and dim. Three fields of grey dust drift behind at halved rates. No boxes, no rules, no dividers. The profile URL is the line itself.",
+      "case": "Beats the leader on both axes: this audience are the demoscene's heirs, and a ranked list of baselines is clearer than a developing print. Depth as rank is honest because it is collection count.",
+      "risk": "One step from the black-with-one-accent cluster; the grammar's ban on glow, boxes and rules is what keeps it out. The bitmap face must stay legible at body size on 2x screens.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-cracktro-scroller-queue-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-c-cracktro-scroller-queue.webp"
+    },
+    {
+      "id": "challenger-cyclorama",
+      "label": "Cyclorama Dawn",
+      "verdict": "competitive",
+      "lineage": "theatre lighting on a seamless cyclorama",
+      "thesis": "The page is a dawn read top to bottom: quiet apps in the night bands, the busiest in first light, the person in full day.",
+      "palette": ["#050507", "#1B3A8A", "#C86A8C", "#F4EEF0", "#8FA3D9"],
+      "materials": ["depthless cyc black", "cobalt horizon band", "rose wash", "lighting-plot stencil caps"],
+      "viewport": "Night band at the top with the DID and PDS in stencil caps and tabular numerals. One horizon band per app, ordered quiet to busy as cobalt gives way to rose. The handle and avatar stand in the white-day band at the foot, the only fully lit region.",
+      "case": "Holds clarity: bands are rows and the gradient orders activity. Loses identification: theatre lighting is nobody's daily world in this audience.",
+      "risk": "Text on shifting colour is a contrast hazard band by band.",
+      "hero": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn.webp"
+    },
+    {
+      "id": "challenger-pixorama",
+      "label": "Pixorama Street",
+      "verdict": "competitive",
+      "lineage": "eBoy isometric pixel cities",
+      "thesis": "Each app is a shopfront on one isometric street, drawn on a single hard pixel grid.",
+      "palette": ["#FF0000", "#00FFFF", "#FFFF00", "#0000FF", "#00CC00"],
+      "materials": ["hard pixel grid", "isometric blocks", "zero anti-aliasing", "deliberate dither"],
+      "viewport": "One straight isometric street. Every app is a building with pixel signage, the avatar a pixel citizen at its door, unknown apps unbuilt lots with a domain-name hoarding. Hover pops a label without breaking the grid; tap enters the shop.",
+      "case": "Holds identification: eBoy is beloved by exactly this audience. Loses clarity: a street is not a scannable list and phones show fewer blocks.",
+      "risk": "Expression obscures the task unless the street stays one straight row.",
+      "hero": "https://impeccable.style/worlds/cards/eboy-pixorama-metropolis-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/eboy-pixorama-metropolis.webp"
+    },
+    {
+      "id": "challenger-cape",
+      "label": "Drawcord Cape",
+      "verdict": "declined",
+      "lineage": "transforming drawcord garments",
+      "thesis": "One gold cord gathers a flat black plane into a shaped shell.",
+      "palette": ["#0B0B0C", "#C9A24A", "#3A3A3E", "#5A6270"],
+      "materials": ["matte black silk", "gold drawcord", "graphite channel stitching"],
+      "viewport": "A black semicircle with labelled cord channels that gather on pull.",
+      "case": "Fuses poorly: nothing about an account maps to gathering cloth, and the audience has no attachment to garment engineering.",
+      "kept": "Labels ride the structure, never boxes.",
+      "risk": "A demo, not a card.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape-hero.webp"
+    },
+    {
+      "id": "challenger-labanotation",
+      "label": "Labanotation Score",
+      "verdict": "declined",
+      "lineage": "labanotation dance scores",
+      "thesis": "A vertical staff read upward where block length is duration and fill is level.",
+      "palette": ["#FFFFFF", "#111111", "#D9D9D9"],
+      "materials": ["score paper", "solid, hatched and dotted blocks", "centre staff"],
+      "viewport": "A centre staff with app blocks flanking it, time rising.",
+      "case": "Fuses dishonestly: the data has presence but no durations, so block length would invent a fact. Audience identification is nil.",
+      "kept": "Level by fill, not colour.",
+      "risk": "Encodes what the data cannot support.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-labanotation-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The link-in-bio page",
+    "thesis": "What this category ships, executed impeccably.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB"],
+    "materials": ["centred column", "pill buttons", "system sans"],
+    "viewport": "Avatar, name, bio, then stacked full-width buttons, one per app.",
+    "risk": "Indistinguishable from Linktree by design."
+  },
+  "steer": true
+}

@@ -82,7 +82,7 @@ export async function resolveHandle(handle: string): Promise<string> {
     (await resolveViaAppView(normalized)) ??
     (await resolveViaDns(normalized)) ??
     (await resolveViaWellKnown(normalized));
-  if (!did) throw new ResolutionError(`Could not resolve handle ${handle}`);
+  if (!did) throw new ResolutionError(`No account resolves to ${handle}.`);
   return did;
 }
 
@@ -117,7 +117,7 @@ export async function describeRepo(pds: string, did: string): Promise<string[]> 
   const data = await getJson<{ collections?: string[] }>(
     `${pds}/xrpc/com.atproto.repo.describeRepo?repo=${encodeURIComponent(did)}`,
   );
-  if (!data) throw new ResolutionError(`Could not read repository for ${did} at ${pds}`, 502);
+  if (!data) throw new ResolutionError(`The PDS at ${new URL(pds).host} did not answer for ${did}.`, 502);
   return (data.collections ?? []).slice().sort();
 }
 
@@ -135,7 +135,7 @@ export async function getRecord<T = Record<string, unknown>>(
 
 export async function resolveIdentity(identifier: string): Promise<Identity> {
   const kind = classifyIdentifier(identifier);
-  if (!kind) throw new ResolutionError(`"${identifier}" is not a handle or DID`, 400);
+  if (!kind) throw new ResolutionError(`"${identifier}" is not a handle or a DID.`, 400);
 
   const requestedHandle = kind === "handle" ? identifier.toLowerCase() : null;
   const did = kind === "did" ? identifier : await resolveHandle(identifier);

@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "src/render/html.ts"
+        ],
+        "createdAt": "2026-09-04T22:33:39.410Z",
+        "reason": "Cyclorama Dawn world chosen by the user on the decision page (seed 2b6888a7); its quality-bar board sets display stencil caps in the cobalt-to-rose gradient, and the h1 handle carries that grammar"
+      }
+    ]
+  }
+}
