@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "at-here",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "routes": [{ "pattern": "at-here.ideasasylum.com", "custom_domain": true }],
+  "vars": { "PUBLIC_ORIGIN": "https://at-here.ideasasylum.com" },
+  "observability": { "enabled": true }
+}
