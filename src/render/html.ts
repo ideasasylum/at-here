@@ -75,8 +75,17 @@ interface BandTheme {
   tube: string;
   tubeRgb: string;
   tubeInk: string;
+  tubeText: string;
   ink: string;
   ink2: string;
+}
+
+function readableTube(surface: string, tube: string): string {
+  for (let t = 0; t <= 1; t += 0.05) {
+    const candidate = mix(tube, "#FFFFFF", t);
+    if (contrast(surface, candidate) >= 4.6) return candidate;
+  }
+  return INK;
 }
 
 function secondaryInk(surface: string, start: string): string {
@@ -94,6 +103,7 @@ function themeFor(tube: string, base = SURFACE): BandTheme {
     tube,
     tubeRgb: rgbTriplet(tube),
     tubeInk: mix(tube, "#FFFFFF", 0.72),
+    tubeText: readableTube(surface, tube),
     ink: INK,
     ink2: secondaryInk(surface, mix(tube, INK, 0.45)),
   };
@@ -112,6 +122,7 @@ function bandStyle(theme: BandTheme, index?: number): string {
     `--tube:${theme.tube}`,
     `--tube-rgb:${theme.tubeRgb}`,
     `--tube-ink:${theme.tubeInk}`,
+    `--tube-text:${theme.tubeText}`,
     `--ink:${theme.ink}`,
     `--ink-2:${theme.ink2}`,
   ];
@@ -222,10 +233,10 @@ details.more[open]>.bio{margin-top:18px}
 .cue>a:focus-visible{outline:2px solid rgb(var(--tube-rgb));outline-offset:-10px;box-shadow:none}
 .cue .wrap{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,8fr) auto;gap:10px clamp(24px,4vw,56px);align-items:center;padding-top:46px;padding-bottom:40px;min-height:150px}
 .cue .lead{display:flex;align-items:baseline;gap:18px;min-width:0}
-.cue .rank{font:500 .82rem/1 var(--text);letter-spacing:.1em;color:rgb(var(--tube-rgb));flex:none;min-width:2ch}
+.cue .rank{font:500 .82rem/1 var(--text);letter-spacing:.1em;color:var(--tube-text);flex:none;min-width:2ch}
 .cue .app{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1;letter-spacing:.01em;overflow-wrap:break-word;color:var(--tube-ink);text-shadow:0 0 1px rgba(255,255,255,.5),0 0 6px rgb(var(--tube-rgb)),0 0 18px rgba(var(--tube-rgb),.6),0 0 40px rgba(var(--tube-rgb),.3);transition:text-shadow 180ms ease-out}
 .cue>a:hover .app{text-shadow:0 0 1px rgba(255,255,255,.8),0 0 8px rgb(var(--tube-rgb)),0 0 26px rgba(var(--tube-rgb),.85),0 0 60px rgba(var(--tube-rgb),.45)}
-.cue .tag{display:inline-block;vertical-align:.35em;margin-left:14px;font:600 .66rem/1 var(--text);letter-spacing:.14em;text-transform:uppercase;padding:5px 8px 4px;border:1px solid rgb(var(--tube-rgb));color:rgb(var(--tube-rgb));border-radius:2px;text-shadow:none}
+.cue .tag{display:inline-block;vertical-align:.35em;margin-left:14px;font:600 .66rem/1 var(--text);letter-spacing:.14em;text-transform:uppercase;padding:5px 8px 4px;border:1px solid rgb(var(--tube-rgb));color:var(--tube-text);border-radius:2px;text-shadow:none}
 .cue .about{min-width:0;display:grid;gap:6px}
 .cue .blurb{font-size:1rem;color:var(--ink-body)}
 .cue .note{font-size:.95rem;color:var(--ink-2);white-space:pre-line;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}

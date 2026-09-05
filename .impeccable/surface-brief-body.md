@@ -4,9 +4,9 @@ Audience and job: someone arriving from a link the account owner shared, who wan
 
 Action and proof: every app row is the link. The evidence line on each row names the record collections that justify it. Counts of collections are the only magnitude shown. vCard and JSON are secondary actions.
 
-Direction: Cyclorama Dawn. The page is a lighting cue list read top to bottom: identity in cyc black, one horizon band per app rising through cobalt, rose and dawn in rank order, utilities in day wash, the record-collection footer in white day. Band colour encodes reading order, never importance. Bands are flat solids with gradient only at the seam so text always sits on a solid; ink flips per band by contrast. Stencil caps for the handle and app names, a geometric sans for everything else, tabular numerals for data.
+Direction: a neon bar, re-lit from the Cyclorama Dawn roll at the author's request after the first build. The page is a cue list read down one dark wall: identity as the magenta neon sign over the door, one dark shelf per app, each seam a 2px neon tube whose colour walks cyan to violet to magenta to orange in rank order, utilities under amber, the record footer under warm white. Surfaces stay near-black tinted 6% toward their tube; light spills from each tube into the shelf below. Tilt Neon for the sign, app names and section heads, glowing in their tube colour; Saira for text; tabular numerals for data. Nothing solid and saturated, no hard edges, no cast shadows.
 
-Memorable moment: the horizon. The first app band's top edge is a lit horizon at the foot of the first viewport, with the avatar standing on it as the actor casting a long shadow, and bands raise up in cue order on load.
+Memorable moment: the first tube. It runs the full width at the foot of the first viewport with the avatar standing on it in a neon-rimmed frame; the handle flickers on like a sign and the shelves raise in cue order on load.
 
 Constraints: server-rendered HTML, CSS-only motion honouring reduced motion, AA contrast on every band, no per-app brand colours or logos, no theme toggle, no kicker labels above headings.
 
